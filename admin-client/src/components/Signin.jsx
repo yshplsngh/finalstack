@@ -6,7 +6,7 @@ import axios from "axios";
 import {useNavigate} from "react-router-dom";
 import {useSetRecoilState} from "recoil";
 import {userState} from "../store/atoms/user.js";
-
+import { BASE_URL } from "../config.js";
 function Signin() {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
